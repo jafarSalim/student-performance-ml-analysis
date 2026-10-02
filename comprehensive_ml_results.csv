@@ -1,0 +1,10 @@
+Algorithm_Type,Algorithm,Accuracy,Precision,Recall,F1_Score,CV_Mean,CV_Std
+Naive_Bayes,Gaussian NB,0.6975,0.6754,0.6975,0.6722,0.7031,0.0442
+Naive_Bayes,Multinomial NB,0.6807,0.6458,0.6807,0.6232,0.7101,0.0346
+Naive_Bayes,Bernoulli NB,0.6975,0.6790,0.6975,0.6805,0.6668,0.0425
+PCA,Standard PCA,0.6639,0.5852,0.6639,0.5635,0.6639,0.0000
+PCA,SVD PCA,0.6639,0.5852,0.6639,0.5635,0.6639,0.0000
+PCA,Incremental PCA,0.6639,0.5852,0.6639,0.5635,0.6639,0.0000
+Semi_Supervised,Self-Training NB,0.6387,0.6133,0.6387,0.6206,0.6387,0.0000
+Semi_Supervised,Co-Training NB,0.6387,0.5867,0.6387,0.5931,0.6387,0.0000
+Semi_Supervised,Label Propagation NB,0.6050,0.5865,0.6050,0.5938,0.6050,0.0000

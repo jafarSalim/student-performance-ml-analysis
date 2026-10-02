@@ -1,0 +1,9 @@
+Dataset: Student Performance
+Provider: UCI Machine Learning Repository
+Dataset page: https://archive.ics.uci.edu/dataset/320/student+performance
+
+Included files:
+- student-mat.csv : Mathematics course
+- student-por.csv : Portuguese language course
+
+Please cite and follow the original dataset provider's terms when reusing the data.

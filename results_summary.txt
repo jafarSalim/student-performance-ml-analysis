@@ -1,0 +1,138 @@
+🚀 Starting Comprehensive ML Analysis...
+   📊 Naive Bayes Classifiers (3 types)
+   📊 Principal Component Analysis (3 implementations)
+   📊 Semi-Supervised Learning (3 methods)
+======================================================================
+======================================================================
+🎓 COMPREHENSIVE ML ANALYSIS: NAIVE BAYES + PCA + SEMI-SUPERVISED
+======================================================================
+✓ Found dataset at: student-mat.csv
+✓ Successfully loaded with semicolon separator
+📊 Using REAL student performance dataset
+🔄 Preprocessing student data...
+✓ Preprocessed features: 30 features, 395 samples
+✓ Target distribution: [130 265] (0=Fail, 1=Pass)
+
+📈 Data Split:
+   Training: 276 samples
+   Testing: 119 samples
+   Features: 30
+
+==================================================
+🤖 1. NAIVE BAYES CLASSIFIERS ANALYSIS
+==================================================
+
+🔍 Testing Gaussian NB...
+   ✓ Accuracy: 0.6975
+   ✓ Precision: 0.6754
+   ✓ Recall: 0.6975
+   ✓ F1-Score: 0.6722
+   ✓ CV Score: 0.7031 (±0.0442)
+
+🔍 Testing Multinomial NB...
+   ✓ Accuracy: 0.6807
+   ✓ Precision: 0.6458
+   ✓ Recall: 0.6807
+   ✓ F1-Score: 0.6232
+   ✓ CV Score: 0.7101 (±0.0346)
+
+🔍 Testing Bernoulli NB...
+   ✓ Accuracy: 0.6975
+   ✓ Precision: 0.6790
+   ✓ Recall: 0.6975
+   ✓ F1-Score: 0.6805
+   ✓ CV Score: 0.6668 (±0.0425)
+
+==================================================
+📊 2. PRINCIPAL COMPONENT ANALYSIS
+==================================================
+
+🔍 Testing Standard PCA...
+   ✓ Explained Variance: 0.5690
+   ✓ Components: 10
+   ✓ Accuracy with Gaussian NB: 0.6639
+   ✓ Reduced to 10 components
+
+🔍 Testing SVD PCA...
+   ✓ Explained Variance: 0.5690
+   ✓ Components: 10
+   ✓ Accuracy with Gaussian NB: 0.6639
+   ✓ Reduced to 10 components
+
+🔍 Testing Incremental PCA...
+   ✓ Explained Variance: 0.5690
+   ✓ Components: 10
+   ✓ Accuracy with Gaussian NB: 0.6639
+   ✓ Reduced to 10 components
+
+==================================================
+🔄 3. SEMI-SUPERVISED LEARNING
+==================================================
+   📊 Labeled samples: 82
+   📊 Unlabeled samples: 194
+
+🔍 Baseline (Supervised with limited data)...
+   ✓ Baseline Accuracy: 0.6050
+
+🔍 Testing Self-Training NB...
+   ✓ Accuracy: 0.6387
+   ✓ Improvement over baseline: +0.0336
+
+🔍 Testing Co-Training NB...
+   ✓ Accuracy: 0.6387
+   ✓ Improvement over baseline: +0.0336
+
+🔍 Testing Label Propagation NB...
+   ✓ Accuracy: 0.6050
+   ✓ Improvement over baseline: +0.0000
+
+🏆 BEST PERFORMERS:
+   🥇 Best Naive Bayes: Gaussian NB (0.6975)
+   🥇 Best PCA Method: Standard PCA (0.6639)
+   🥇 Best Semi-Supervised: Self-Training NB (0.6387)
+✓ Exported: ml_analysis_dashboard.png
+
+💾 Exporting comprehensive results...
+✓ Exported: comprehensive_ml_results.csv
+✓ Exported: ml_methods_comparison.csv
+✓ Exported: dataset_and_best_results.csv
+
+📊 COMPREHENSIVE RESULTS SUMMARY:
+================================================================================
+ Algorithm_Type            Algorithm Accuracy Precision Recall F1_Score CV_Mean CV_Std
+    Naive_Bayes          Gaussian NB   0.6975    0.6754 0.6975   0.6722  0.7031 0.0442
+    Naive_Bayes       Multinomial NB   0.6807    0.6458 0.6807   0.6232  0.7101 0.0346
+    Naive_Bayes         Bernoulli NB   0.6975    0.6790 0.6975   0.6805  0.6668 0.0425
+            PCA         Standard PCA   0.6639    0.5852 0.6639   0.5635  0.6639 0.0000
+            PCA              SVD PCA   0.6639    0.5852 0.6639   0.5635  0.6639 0.0000
+            PCA      Incremental PCA   0.6639    0.5852 0.6639   0.5635  0.6639 0.0000
+Semi_Supervised     Self-Training NB   0.6387    0.6133 0.6387   0.6206  0.6387 0.0000
+Semi_Supervised       Co-Training NB   0.6387    0.5867 0.6387   0.5931  0.6387 0.0000
+Semi_Supervised Label Propagation NB   0.6050    0.5865 0.6050   0.5938  0.6050 0.0000
+
+🏆 BEST METHODS COMPARISON:
+============================================================
+       Category            Algorithm              Best_Metric  Score      Additional_Info
+    Naive_Bayes          Gaussian NB                 Accuracy 0.6975      CV: 0.703±0.044
+    Naive_Bayes       Multinomial NB                 Accuracy 0.6807      CV: 0.710±0.035
+    Naive_Bayes         Bernoulli NB                 Accuracy 0.6975      CV: 0.667±0.043
+            PCA         Standard PCA Accuracy_with_GaussianNB 0.6639 Explained_Var: 0.569
+            PCA              SVD PCA Accuracy_with_GaussianNB 0.6639 Explained_Var: 0.569
+            PCA      Incremental PCA Accuracy_with_GaussianNB 0.6639 Explained_Var: 0.569
+Semi_Supervised             Baseline                 Accuracy 0.6050             Baseline
+Semi_Supervised     Self-Training NB                 Accuracy 0.6387  Improvement: +0.034
+Semi_Supervised       Co-Training NB                 Accuracy 0.6387  Improvement: +0.034
+Semi_Supervised Label Propagation NB                 Accuracy 0.6050  Improvement: +0.000
+
+📈 DATASET CHARACTERISTICS:
+==================================================
+                      Characteristic            Value
+                       Total Samples              395
+Total Features (after preprocessing)               30
+                       Pass Rate (%)            67.1%
+                       Fail Rate (%)            32.9%
+                 Average Final Grade            10.42
+               Standard Deviation G3             4.58
+             Best Naive Bayes Method      Gaussian NB
+         Best Semi-Supervised Method Self-Training NB
+               Overall Best Accuracy           0.6975

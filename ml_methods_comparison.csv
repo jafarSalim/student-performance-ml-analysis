@@ -1,0 +1,11 @@
+Category,Algorithm,Best_Metric,Score,Additional_Info
+Naive_Bayes,Gaussian NB,Accuracy,0.6975,CV: 0.703±0.044
+Naive_Bayes,Multinomial NB,Accuracy,0.6807,CV: 0.710±0.035
+Naive_Bayes,Bernoulli NB,Accuracy,0.6975,CV: 0.667±0.043
+PCA,Standard PCA,Accuracy_with_GaussianNB,0.6639,Explained_Var: 0.569
+PCA,SVD PCA,Accuracy_with_GaussianNB,0.6639,Explained_Var: 0.569
+PCA,Incremental PCA,Accuracy_with_GaussianNB,0.6639,Explained_Var: 0.569
+Semi_Supervised,Baseline,Accuracy,0.6050,Baseline
+Semi_Supervised,Self-Training NB,Accuracy,0.6387,Improvement: +0.034
+Semi_Supervised,Co-Training NB,Accuracy,0.6387,Improvement: +0.034
+Semi_Supervised,Label Propagation NB,Accuracy,0.6050,Improvement: +0.000

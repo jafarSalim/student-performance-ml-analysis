@@ -1,0 +1,10 @@
+Characteristic,Value
+Total Samples,395
+Total Features (after preprocessing),30
+Pass Rate (%),67.1%
+Fail Rate (%),32.9%
+Average Final Grade,10.42
+Standard Deviation G3,4.58
+Best Naive Bayes Method,Gaussian NB
+Best Semi-Supervised Method,Self-Training NB
+Overall Best Accuracy,0.6975
